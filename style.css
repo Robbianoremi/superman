@@ -19,7 +19,7 @@ header,
   display: flex;
   justify-content: center;
   font-size: 50px;
-  background-image: url(./image/image/bg.png);
+  background-image: url(./image/bg.png);
 }
 
 .simplegrid,
@@ -154,7 +154,7 @@ header,
 
 .item18 {
   grid-column: 3/4;
-  grid-row: 2/7;
+  grid-row: 2/8;
 }
 .item19 {
   grid-column: 1/4;
@@ -164,18 +164,40 @@ header,
 .item13 {
   text-align: center;
 }
+.item12 img { 
+  background: linear-gradient(red, white, red)
+  
+
+}
 .item12, .item13, .item14, .item15, .item16, .item17, .item19 {
 
     text-align: center;
 }
 .item13 img, .item14 img, .item15 img, .item16 img, .item17 img{
     width:100px;
-} 
+    border-radius: 50px;
+   
+    animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+
+
+
+
+
 .item12 img {
 width: 300px;
 }
 .item19 img {
-    width: 30px;
+   padding-top: 60px;
+    width: 20px;
     }
     video {
         width:100%;
@@ -203,6 +225,7 @@ width: 300px;
       .item13 {
         grid-column: 2/3;
         grid-row: 2/3;
+      
       }
       .item14 {
         grid-column: 2/3;
